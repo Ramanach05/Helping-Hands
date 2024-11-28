@@ -1,0 +1,301 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="project1.Register" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <style type="text/css">
+        body{
+            background-color:burlywood;
+        }
+        .auto-style1 {
+            position: absolute;
+            top: 108px;
+            left: 206px;
+            z-index: 1;
+        }
+        .auto-style2 {
+            position: absolute;
+            top: 107px;
+            left: 332px;
+            z-index: 1;
+        }
+        .auto-style3 {
+            position: absolute;
+            top: 191px;
+            left: 206px;
+            z-index: 1;
+        }
+        .auto-style4 {
+            position: absolute;
+            top: 187px;
+            left: 329px;
+            z-index: 1;
+        }
+        .auto-style5 {
+            position: absolute;
+            top: 261px;
+            left: 328px;
+            z-index: 1;
+        }
+        .auto-style6 {
+            position: absolute;
+            top: 260px;
+            left: 189px;
+            z-index: 1;
+        }
+        .auto-style7 {
+            position: absolute;
+            top: 341px;
+            left: 208px;
+            z-index: 1;
+        }
+        .auto-style8 {
+            position: absolute;
+            top: 342px;
+            left: 459px;
+            z-index: 1;
+        }
+        .auto-style9 {
+            position: absolute;
+            top: 341px;
+            left: 313px;
+            z-index: 1;
+            right: 1001px;
+            height: 26px;
+        }
+        .auto-style10 {
+            position: absolute;
+            top: 421px;
+            left: 202px;
+            z-index: 1;
+        }
+        .auto-style11 {
+            position: absolute;
+            top: 417px;
+            left: 321px;
+            z-index: 1;
+        }
+        .auto-style12 {
+            position: absolute;
+            top: 416px;
+            left: 538px;
+            z-index: 1;
+        }
+        .auto-style13 {
+            position: absolute;
+            top: 418px;
+            left: 435px;
+            z-index: 1;
+        }
+        .auto-style14 {
+            position: absolute;
+            top: 515px;
+            left: 230px;
+            z-index: 1;
+        }
+        .auto-style15 {
+            position: absolute;
+            top: 663px;
+            left: 188px;
+            z-index: 1;
+        }
+        .auto-style16 {
+            position: absolute;
+            top: 586px;
+            left: 230px;
+            z-index: 1;
+        }
+        .auto-style17 {
+            position: absolute;
+            top: 506px;
+            left: 360px;
+            z-index: 1;
+            width: 149px;
+        }
+        .auto-style18 {
+            position: absolute;
+            top: 663px;
+            left: 357px;
+            z-index: 1;
+            width: 151px;
+            height: 11px;
+        }
+        .auto-style19 {
+            position: absolute;
+            top: 588px;
+            left: 353px;
+            z-index: 1;
+            width: 145px;
+        }
+        .auto-style20 {
+            position: absolute;
+            top: 841px;
+            left: 226px;
+            z-index: 1;
+        }
+        .auto-style21 {
+            position: absolute;
+            top: 747px;
+            left: 226px;
+            z-index: 1;
+        }
+        .auto-style22 {
+            position: absolute;
+            top: 742px;
+            left: 360px;
+            z-index: 1;
+        }
+        .auto-style23 {
+            position: absolute;
+            top: 826px;
+            left: 358px;
+            z-index: 1;
+        }
+        .auto-style24 {
+            position: absolute;
+            top: 938px;
+            left: 351px;
+            z-index: 1;
+            background-color:brown;
+            color:white;
+            border-radius:10px;
+        }
+        .auto-style25 {
+            position: absolute;
+            top: 934px;
+            left: 542px;
+            background-color:brown;
+            color:white;
+            border-radius:10px;
+            z-index: 1;
+        }
+        .auto-style26 {
+            position: absolute;
+            top: 37px;
+            left: 220px;
+            z-index: 1;
+        }
+        .auto-style27 {
+            position: absolute;
+            top: 36px;
+            left: 330px;
+            z-index: 1;
+        }
+        .rama{
+            border:dotted 5px red;
+        }
+        .auto-style28 {
+            border: dotted 3px red;
+            width: 667px;
+            height: 955px;
+            margin-top: 10px;
+            background-color:darkgray;
+            border-radius:90px;
+        }
+        .auto-style30 {
+            position: absolute;
+            top: 114px;
+            left: 879px;
+            z-index: 1;
+            width: 400px;
+            height: 367px;
+        }
+        .auto-style31 {
+            position: absolute;
+            top: 42px;
+            left: 973px;
+            z-index: 1;
+        }
+        .auto-style32 {
+            position: absolute;
+            top: 45px;
+            left: 871px;
+            z-index: 1;
+        }
+        .auto-style33 {
+            position: absolute;
+            top: 244px;
+            left: 533px;
+            z-index: 1;
+            width: 278px;
+            height: 40px;
+            margin-right: 8px;
+        }
+        .auto-style34 {
+            position: absolute;
+            top: 511px;
+            left: 551px;
+            z-index: 1;
+        }
+        .auto-style35 {
+            position: absolute;
+            top: 662px;
+            left: 543px;
+            z-index: 1;
+        }
+        .auto-style37 {
+            position: absolute;
+            top: 744px;
+            left: 581px;
+            z-index: 1;
+            width: 173px;
+        }
+        .auto-style39 {
+            position: absolute;
+            top: 592px;
+            left: 553px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body style="width: 1314px; height: 1130px; margin-left: 90px;">
+    <form id="form1" runat="server">
+            <div class="auto-style28">
+                <asp:HyperLink ID="HyperLink1" runat="server" CssClass="auto-style31" NavigateUrl="~/LogOut.aspx">LogOut</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink2" runat="server" CssClass="auto-style32" NavigateUrl="~/Home1.aspx">Home</asp:HyperLink>
+            <br />
+            <asp:Label ID="Label9" runat="server" CssClass="auto-style20" Text="Email"></asp:Label>
+            <asp:Label ID="Label10" runat="server" CssClass="auto-style21" Text="Phno"></asp:Label>
+            <asp:Label ID="Label11" runat="server" CssClass="auto-style26" Text="Uid" Visible="False"></asp:Label>
+            <asp:TextBox ID="txtuid" runat="server" CssClass="auto-style27" ReadOnly="True" Visible="False"></asp:TextBox>
+        <asp:Label ID="Label1" runat="server" CssClass="auto-style1" Text="User Name"></asp:Label>    
+        <asp:TextBox ID="txtuname" runat="server" CssClass="auto-style2"></asp:TextBox>
+        <asp:Label ID="Label2" runat="server" CssClass="auto-style3" Text="Password"></asp:Label>
+        <asp:TextBox ID="txtpwd" runat="server" CssClass="auto-style4" TextMode="Password"></asp:TextBox>
+        <asp:TextBox ID="txtcpwd" runat="server" CssClass="auto-style5" TextMode="Password"></asp:TextBox>
+        <asp:Label ID="Label3" runat="server" CssClass="auto-style6" Text="Confirm Pwd"></asp:Label>
+        <asp:Label ID="Label4" runat="server" CssClass="auto-style7" Text="Gender"></asp:Label>
+        <asp:RadioButton ID="rbtmale" runat="server" CssClass="auto-style9" Text="Male" GroupName="first" />
+        <asp:RadioButton ID="rbtfemale" runat="server" CssClass="auto-style8" Text="Female" GroupName="first" />
+        <asp:Label ID="Label5" runat="server" CssClass="auto-style10" Text="Languages"></asp:Label>
+        <asp:CheckBox ID="chhin" runat="server" CssClass="auto-style13" Text="Hindi" />
+        <asp:CheckBox ID="chtel" runat="server" CssClass="auto-style11" Text="Telugu" />
+        <asp:CheckBox ID="cheng" runat="server" CssClass="auto-style12" Text="English" />
+        <asp:Label ID="Label6" runat="server" CssClass="auto-style14" Text="State"></asp:Label>
+        <asp:Label ID="Label7" runat="server" CssClass="auto-style15" Text="Blood Group"></asp:Label>
+        <asp:Label ID="Label8" runat="server" CssClass="auto-style16" Text="City"></asp:Label>
+        <asp:DropDownList ID="ddropbloodg" runat="server" CssClass="auto-style18">
+        </asp:DropDownList>
+        <asp:DropDownList ID="ddropcity" runat="server" AutoPostBack="True" CssClass="auto-style19">
+        </asp:DropDownList>
+            <asp:TextBox ID="txtphno" runat="server" CssClass="auto-style22"></asp:TextBox>
+            <asp:TextBox ID="txtemail" runat="server" CssClass="auto-style23"></asp:TextBox>
+        
+        <p>
+        <asp:DropDownList ID="ddropstate" runat="server" CssClass="auto-style17" OnSelectedIndexChanged="ddropstate_SelectedIndexChanged" AutoPostBack="True" ClientIDMode="AutoID">
+        </asp:DropDownList>
+        </p>
+            <asp:Button ID="btnRegister" runat="server" CssClass="auto-style24" OnClick="btnRegister_Click" Text="Register" />
+            <asp:Button ID="btnclear" runat="server" CssClass="auto-style25" Text="Clear" OnClick="btnclear_Click" />
+                <asp:Image ID="Image1" runat="server" CssClass="auto-style30" ImageUrl="~/images/member.jpg" />
+                <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="txtpwd" ControlToValidate="txtcpwd" CssClass="auto-style33" ErrorMessage="PassWord and ConfirmPassword must be Same"></asp:CompareValidator>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="ddropstate" CssClass="auto-style34" InitialValue="--select state--" ErrorMessage="--select state--"></asp:RequiredFieldValidator>
+                <asp:CustomValidator ID="CustomValidator2" runat="server" ControlToValidate="txtphno" CssClass="auto-style37" ErrorMessage="phno start with 9,8,7,6  " OnServerValidate="CustomValidator2_ServerValidate"></asp:CustomValidator>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="ddropbloodg" CssClass="auto-style35" InitialValue="--selectBlood--" ErrorMessage="--selectBlood--"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="ddropcity" CssClass="auto-style39" ErrorMessage="--select city--" InitialValue="--select city--"></asp:RequiredFieldValidator>
+          </div>
+         </form>
+</body>
+</html>
