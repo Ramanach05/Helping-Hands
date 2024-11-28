@@ -1,0 +1,124 @@
+<%@ Page Language="C#" AutoEventWireup="true" Codefile="ULogin.aspx.cs" Inherits="project1.ULogin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <style type="text/css">
+        body{
+            background-color:darkcyan;
+        }
+        .auto-style1 {
+            position: absolute;
+            top: 160px;
+            left: 195px;
+            color:orangered;
+        }
+        .auto-style2 {
+            position: absolute;
+            top: 234px;
+            color:orangered;
+            left: 198px;
+            z-index: 1;
+        }
+        .auto-style3 {
+            position: absolute;
+            top: 159px;
+            left: 329px;
+            background-color:darkkhaki;
+            border-radius:10px;
+            z-index: 1;
+        }
+        .auto-style4 {
+            position: absolute;
+            top: 232px;
+            left: 331px;
+            background-color:darkkhaki;
+            border-radius:10px;
+            z-index: 1;
+        }
+        .auto-style5 {
+            position: absolute;
+            top: 332px;
+           background-color:brown;
+           border-radius:10px;
+            left: 325px;
+            z-index: 1;
+        }
+        .auto-style6 {
+            position: absolute;
+            top: 160px;
+            left: 629px;
+            z-index: 1;
+        }
+        .auto-style7 {
+            position: absolute;
+            top: 138px;
+            left: 794px;
+            z-index: 1;
+            height: 340px;
+            width: 402px;
+        }
+        .auto-style8 {
+            position: absolute;
+            top: 63px;
+            left: 677px;
+            z-index: 1;
+            height: 21px;
+        }
+        #ram{
+            border:dotted 1px red;
+        }
+        .auto-style9 {
+            height: 356px;
+            width: 464px;
+            margin-top:70px;
+            margin-bottom:50px;
+            margin-left: 107px;
+            margin-right: 0px;
+            background-color:burlywood;
+            border-radius:100px;
+        }
+        .auto-style10 {
+            position: absolute;
+            top: 63px;
+            left: 795px;
+            z-index: 1;
+        }
+        .auto-style11 {
+            position: absolute;
+            top: 330px;
+            left: 440px;
+            background-color:brown;
+           border-radius:10px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <p>
+            <asp:HyperLink ID="HyperLink2" runat="server" CssClass="auto-style10" NavigateUrl="~/LogOut.aspx">LogOut</asp:HyperLink>
+            <div id="ram" class="auto-style9">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Label ID="Label1" runat="server" CssClass="auto-style1" style="z-index: 1" Text="User Name"></asp:Label>
+        <asp:Label ID="Label2" runat="server" CssClass="auto-style2" Text="PassWord"></asp:Label>
+        <asp:TextBox ID="txtuname" runat="server" CssClass="auto-style3"></asp:TextBox>
+        <asp:TextBox ID="txtpwd" runat="server" CssClass="auto-style4"></asp:TextBox>
+        <asp:Button ID="btnLogin" runat="server" CssClass="auto-style5" OnClick="btnLogin_Click" Text="Login" />
+        <asp:Label ID="lblmsg" runat="server" CssClass="auto-style6"></asp:Label>
+        <asp:Image ID="Image1" runat="server" CssClass="auto-style7" ImageUrl="~/images/ulogin.jpg" />
+        <asp:Button ID="Button1" runat="server" CssClass="auto-style11" Text="Forget" OnClick="Button1_Click" />
+        </div>
+    <p>
+        <br />
+    </p>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+        <asp:HyperLink ID="HyperLink1" runat="server" CssClass="auto-style8" NavigateUrl="~/Home1.aspx">Home</asp:HyperLink>
+    </form>
+</body>
+</html>
